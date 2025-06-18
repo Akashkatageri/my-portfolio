@@ -35,7 +35,7 @@ jobs:
       run: npm ci
 
     - name: Build static site
-      run: vite build --config vite.static.config.ts
+      run: npx vite build --config vite.static.config.ts
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
