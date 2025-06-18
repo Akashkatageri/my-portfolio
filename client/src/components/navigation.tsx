@@ -28,7 +28,7 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold text-slate-900">
-              John Smith
+              Akash Katageri
             </h1>
           </div>
 
