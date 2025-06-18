@@ -36,7 +36,7 @@ export default function About() {
             {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">2</div>
+                <div className="text-3xl font-bold text-primary">1</div>
                 <div className="text-slate-600 font-medium">Home Labs Built</div>
               </div>
               <div className="text-center">
