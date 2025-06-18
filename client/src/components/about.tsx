@@ -11,43 +11,41 @@ export default function About() {
               </h2>
               <div className="w-20 h-1 bg-primary mb-8"></div>
             </div>
-            
+
             <div className="space-y-4 text-lg text-slate-600 leading-relaxed">
               <p>
-                I'm a passionate full-stack developer with over 5 years of experience 
-                creating digital solutions that make a difference. My journey started 
-                with a curiosity about how websites work, and it has evolved into a 
-                deep love for crafting elegant, efficient code.
+                I'm Akash Katageri — an 18-year-old cybersecurity enthusiast with a deep curiosity for ethical hacking, network security, and digital privacy. 
+                My journey began with a fascination for how systems can be broken — and more importantly, how they can be secured.
               </p>
-              
+
               <p>
-                I specialize in modern web technologies including React, Node.js, 
-                TypeScript, and cloud platforms. I believe in writing clean, 
-                maintainable code and creating user experiences that are both 
-                beautiful and functional.
+                I'm constantly learning about vulnerability analysis, Linux-based tools, and penetration testing techniques. 
+                I enjoy diving into CTFs, exploring Wireshark captures, and experimenting with tools like Burp Suite and Kali Linux.
               </p>
-              
+
               <p>
-                When I'm not coding, you can find me exploring new technologies, 
-                contributing to open source projects, or enjoying the outdoors. 
-                I'm always eager to take on new challenges and collaborate with 
-                amazing teams.
+                I believe cybersecurity is not just about defense — it's about understanding systems inside out and thinking like both an attacker and a protector. 
+                My goal is to contribute to a safer digital world while continuously evolving my technical and analytical skills.
+              </p>
+
+              <p>
+                Feel free to reach out to me at <a href="mailto:akash@05122006.xyz" className="text-primary underline">akash@05122006.xyz</a>
               </p>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">50+</div>
-                <div className="text-slate-600 font-medium">Projects Completed</div>
+                <div className="text-3xl font-bold text-primary">15+</div>
+                <div className="text-slate-600 font-medium">CTFs Participated</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">5+</div>
-                <div className="text-slate-600 font-medium">Years Experience</div>
+                <div className="text-3xl font-bold text-primary">2</div>
+                <div className="text-slate-600 font-medium">Home Labs Built</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">100%</div>
-                <div className="text-slate-600 font-medium">Client Satisfaction</div>
+                <div className="text-3xl font-bold text-primary">∞</div>
+                <div className="text-slate-600 font-medium">Curiosity to Learn</div>
               </div>
             </div>
           </div>
@@ -58,7 +56,7 @@ export default function About() {
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary to-accent overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=500"
-                  alt="John Smith"
+                  alt="Akash Katageri"
                   className="w-full h-full object-cover"
                 />
               </div>
