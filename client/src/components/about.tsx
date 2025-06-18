@@ -51,7 +51,7 @@ export default function About() {
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary to-accent overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=500"
+                  src="https://static.wikia.nocookie.net/aobuta/images/7/77/Sakuta_Azusagawa_Anime_-_Screenshot_1.png/revision/latest?cb=20181016030234&auto=format&fit=crop&w=500&h=500"
                   alt="Akash Katageri"
                   className="w-full h-full object-cover"
                 />
