@@ -1,8 +1,12 @@
-import { Download, Github, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
+import { Download, Github, Twitter, Instagram, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
-  const handleDownloadResume = () => {
+  const handleDownloadResume = () => { link.href = "/AkashKatageri_Resume.pdf"; // Ensure this file is in the public folder
+    link.download = "AkashKatageri_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
     // In a real app, this would trigger a resume download
     console.log("Resume download would be triggered here");
   };
@@ -11,31 +15,26 @@ export default function Hero() {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/johnsmith",
+      url: "https://github.com/Akashkatageri",
       color: "hover:text-gray-900"
     },
-    {
-      name: "LinkedIn",
-      icon: Linkedin,
-      url: "https://linkedin.com/in/johnsmith",
-      color: "hover:text-blue-600"
-    },
+   
     {
       name: "Twitter",
       icon: Twitter,
-      url: "https://twitter.com/johnsmith",
+      url: "https://twitter.com/AkashK66272218",
       color: "hover:text-blue-400"
     },
     {
       name: "Instagram",
       icon: Instagram,
-      url: "https://instagram.com/johnsmith",
+      url: "https://instagram.com/akash.k0512",
       color: "hover:text-pink-600"
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:john.smith@email.com",
+      url: "mailto:akash@05122006.xyz",
       color: "hover:text-red-600"
     }
   ];
@@ -48,17 +47,16 @@ export default function Hero() {
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Hi, I'm{" "}
-              <span className="text-accent">John Smith</span>
+              <span className="text-accent">Akash Katageri</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-light text-slate-100">
-              Full Stack Developer
+              Cybersecurity Enthusiast & Ethical Hacking Learner
             </h2>
           </div>
 
           {/* Description */}
           <p className="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto leading-relaxed">
-            I create modern, responsive web applications using cutting-edge technologies. 
-            Passionate about clean code, user experience, and bringing ideas to life.
+            I specialize in learning how to break, analyze, and secure systems. Passionate about ethical hacking, CTFs, and securing the web.
           </p>
 
           {/* CTA Buttons */}
