@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Instagram, Mail, Heart } from "lucide-react";
+import { Github, Twitter, Instagram, Mail, Heart } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -7,31 +7,26 @@ export default function Footer() {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/johnsmith",
+      url: "https://github.com/Akashkatageri",
       color: "hover:text-gray-300"
     },
-    {
-      name: "LinkedIn",
-      icon: Linkedin,
-      url: "https://linkedin.com/in/johnsmith",
-      color: "hover:text-blue-400"
-    },
+    
     {
       name: "Twitter",
       icon: Twitter,
-      url: "https://twitter.com/johnsmith",
+      url: "https://twitter.com/AkashK66272218",
       color: "hover:text-blue-300"
     },
     {
       name: "Instagram",
       icon: Instagram,
-      url: "https://instagram.com/johnsmith",
+      url: "https://instagram.com/akash.k0512",
       color: "hover:text-pink-400"
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:john.smith@email.com",
+      url: "mailto:akash@05122006.xyz",
       color: "hover:text-red-400"
     }
   ];
@@ -57,11 +52,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">John Smith</h3>
+            <h3 className="text-2xl font-bold">Akash Katageri</h3>
             <p className="text-slate-300 leading-relaxed">
-              Full Stack Developer passionate about creating innovative digital solutions 
-              that make a difference. Always eager to take on new challenges and 
-              collaborate on exciting projects.
+             Cybersecurity learner focused on ethical hacking, penetration testing & securing systems. 
+
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => {
@@ -104,20 +98,13 @@ export default function Footer() {
             <h4 className="text-lg font-semibold">Get In Touch</h4>
             <div className="space-y-3">
               <a
-                href="mailto:john.smith@email.com"
+                href="mailto:akash@05122006.xyz"
                 className="block text-slate-300 hover:text-white transition-colors duration-300"
               >
-                john.smith@email.com
+                akash@05122006.xyz
               </a>
-              <a
-                href="tel:+15551234567"
-                className="block text-slate-300 hover:text-white transition-colors duration-300"
-              >
-                +1 (555) 123-4567
-              </a>
-              <p className="text-slate-300">
-                San Francisco, CA
-              </p>
+             
+
             </div>
           </div>
         </div>
@@ -125,7 +112,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-slate-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-slate-400 text-sm">
-            © {currentYear} John Smith. All rights reserved.
+            © {currentYear} Akash Katageri. All rights reserved.
           </p>
           <div className="flex items-center space-x-1 text-slate-400 text-sm">
             <span>Made with</span>
