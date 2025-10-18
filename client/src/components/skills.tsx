@@ -8,11 +8,7 @@ export function Skills() {
       icon: Zap,
       skills: [
         { name: "Kali Linux", icon: "🐉" },
-        { name: "Burp Suite", icon: "🛡️" },
-        { name: "Wireshark", icon: "🦈" },
-        { name: "Nmap", icon: "📡" },
-        { name: "Metasploit", icon: "🎯" },
-        { name: "John the Ripper", icon: "🔐" }
+        
       ]
     },
     {
@@ -20,11 +16,7 @@ export function Skills() {
       icon: Cloud,
       skills: [
         { name: "TryHackMe", icon: "🏕️" },
-        { name: "Hack The Box", icon: "📦" },
-        { name: "OverTheWire", icon: "🧠" },
-        { name: "Root-Me", icon: "🌱" },
-        { name: "CTFtime", icon: "⌛" },
-        { name: "VulnHub", icon: "🛠️" }
+        { name: "Cisco NetAcad", icon: "🎓" }
       ]
     },
     {
@@ -33,9 +25,9 @@ export function Skills() {
       skills: [
         { name: "Python", icon: "🐍" },
         { name: "Bash", icon: "💻" },
-        { name: "JavaScript", icon: "📜" },
+        { name: "JSON", icon: "📄" },
         { name: "SQL", icon: "📊" },
-        { name: "HTML/CSS", icon: "🌐" },
+        { name: "HTML", icon: "🌐" },
         { name: "PowerShell", icon: "⚡" }
       ]
     }
