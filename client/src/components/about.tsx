@@ -51,7 +51,7 @@ export default function About() {
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary to-accent overflow-hidden">
                 <img
-                  src="https://preview.redd.it/sakuta-azusagawa-appreciation-post-v0-o5ko4b9e5m8a1.png?width=640&crop=smart&auto=webp&s=84237116e918e83f9bbca9d92ffa7fd3447c77a6"
+                  src=" "
                   alt="Akash Katageri"
                   className="w-full h-full object-cover"
                 />
