@@ -10,7 +10,7 @@ export const projectsData: Project[] = [
     id: "mongodb-json-importer",
     title: "MongoDB JSON Stream Importer",
     description: "A high-performance Python utility for memory-efficiently streaming and bulk-inserting multi-gigabyte JSON files into MongoDB. Features include ijson parsing, optimized pymongo writes, and automatic resume capability for handling massive data imports.",
-    image: "/client/src/mongodb-importer-flow.png", // Ensure you add this image file
+    image: "client/src/mongodb-importer-flow.png", // Ensure you add this image file
     technologies: ["Python", "MongoDB", "JSON", "Data Streaming"],
     featured: "true", 
     liveUrl: "", 
