@@ -1,84 +1,69 @@
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
+import { Github, Mail, ArrowUpRight } from "lucide-react";
+import { PROFILE } from "@/data/studentData";
 
 export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
-  ];
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsMenuOpen(false);
+  const scrollTo = (id: string) => {
+    const el = document.querySelector(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-slate-900">
-              Akash Katageri
-            </h1>
-          </div>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
+        scrolled
+          ? "bg-black/90 backdrop-blur-md border-b border-zinc-900 py-4"
+          : "bg-transparent py-6"
+      }`}
+    >
+      <div className="max-w-4xl mx-auto px-6 flex items-center justify-between">
+        <button
+          onClick={() => scrollTo("#top")}
+          className="text-sm font-semibold text-white tracking-tight hover:text-zinc-300 transition-colors"
+        >
+          {PROFILE.name.toLowerCase()}
+          <span className="text-zinc-500 font-normal ml-2">/ kletaq</span>
+        </button>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              {navItems.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className="nav-link text-slate-600 hover:text-primary px-3 py-2 text-sm font-medium"
-                >
-                  {item.name}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </Button>
-          </div>
+        <div className="flex items-center space-x-6 text-xs text-zinc-400">
+          <button
+            onClick={() => scrollTo("#projects")}
+            className="hover:text-white transition-colors"
+          >
+            projects
+          </button>
+          <button
+            onClick={() => scrollTo("#stack")}
+            className="hover:text-white transition-colors"
+          >
+            stack
+          </button>
+          <button
+            onClick={() => scrollTo("#contact")}
+            className="hover:text-white transition-colors"
+          >
+            contact
+          </button>
+          <a
+            href={PROFILE.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors flex items-center gap-1"
+          >
+            <span>github</span>
+            <ArrowUpRight className="w-3 h-3 text-zinc-500" />
+          </a>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-slate-200">
-              {navItems.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className="nav-link block text-slate-600 hover:text-primary px-3 py-2 text-base font-medium w-full text-left"
-                >
-                  {item.name}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </nav>
   );

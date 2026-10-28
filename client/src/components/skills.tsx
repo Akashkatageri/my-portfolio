@@ -1,82 +1,34 @@
-import { Code, Database, Globe, Smartphone, Cloud, Zap } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { SKILLS } from "@/data/studentData";
 
 export function Skills() {
-  const skillCategories = [
-    {
-      title: "Cybersecurity Tools",
-      icon: Zap,
-      skills: [
-        { name: "Kali Linux", icon: "🐉" },
-        
-      ]
-    },
-    {
-      title: "Platforms & Labs",
-      icon: Cloud,
-      skills: [
-        { name: "TryHackMe", icon: "🏕️" },
-        { name: "Cisco NetAcad", icon: "🎓" }
-      ]
-    },
-    {
-      title: "Languages & Scripting",
-      icon: Code,
-      skills: [
-        { name: "Python", icon: "🐍" },
-        { name: "Bash", icon: "💻" },
-        { name: "JSON", icon: "📄" },
-        { name: "SQL", icon: "📊" },
-        { name: "HTML", icon: "🌐" },
-        { name: "PowerShell", icon: "⚡" }
-      ]
-    }
-  ];
-
   return (
-    <section id="skills" className="py-20 bg-slate-50">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl font-bold text-slate-900 mb-4">Cybersecurity Skills</h2>
-      <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-      <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-        Tools, platforms, and languages I use for ethical hacking, CTFs, and security testing.
-      </p>
-    </div>
+    <section id="stack" className="py-20 px-6 bg-transparent border-t border-zinc-900/80">
+      <div className="max-w-4xl mx-auto space-y-8">
+        
+        <div className="space-y-2">
+          <div className="text-xs font-mono text-zinc-500 uppercase tracking-wider">
+            Stack
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+            Technologies & Tools
+          </h2>
+          <p className="text-sm text-zinc-400">
+            What I actively use to engineer software, build Kletaq, and stream data.
+          </p>
+        </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {skillCategories.map((category, index) => {
-        const IconComponent = category.icon;
-        return (
-          <Card key={index} className="card-hover border-0 shadow-lg">
-            <CardContent className="p-6">
-              <div className="flex items-center mb-4">
-                <div className="p-3 bg-primary/10 rounded-lg mr-4">
-                  <IconComponent className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-slate-900">
-                  {category.title}
-                </h3>
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                {category.skills.map((skill, skillIndex) => (
-                  <div
-                    key={skillIndex}
-                    className="flex items-center space-x-2 p-2 rounded-lg hover:bg-slate-100 transition-colors duration-200"
-                  >
-                    <span className="text-lg skill-icon">{skill.icon}</span>
-                    <span className="text-sm font-medium text-slate-700">
-                      {skill.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        );
-      })}
-    </div>
-  </div>
-</section>
+        <div className="flex flex-wrap gap-2.5">
+          {SKILLS.map((skill, idx) => (
+            <span
+              key={idx}
+              className="px-3.5 py-2 rounded-lg bg-zinc-950 border border-zinc-800 text-xs font-mono text-zinc-300 hover:border-zinc-600 transition-colors"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+
+      </div>
+    </section>
   );
 }
