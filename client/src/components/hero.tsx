@@ -17,14 +17,9 @@ export default function Hero() {
 
         {/* Main Title & Bio */}
         <div className="space-y-4">
-          <div className="flex flex-wrap items-baseline gap-3">
-            <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white">
-              {PROFILE.name}
-            </h1>
-            <span className="text-lg sm:text-xl font-mono text-zinc-500">
-              (@akashk)
-            </span>
-          </div>
+          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white">
+            {PROFILE.name}
+          </h1>
 
           <p className="text-xl sm:text-2xl text-zinc-300 font-normal leading-relaxed max-w-2xl">
             Developer building <span className="text-white font-semibold underline underline-offset-4 decoration-zinc-700">Kletaq</span>. 
