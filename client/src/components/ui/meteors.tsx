@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import React, { useMemo } from "react";
 
 export const Meteors = ({
-  number = 65,
+  number = 18,
   className,
 }: {
   number?: number;
