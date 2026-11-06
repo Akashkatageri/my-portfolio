@@ -12,13 +12,13 @@ export interface ProjectItem {
 
 export const PROFILE = {
   name: "Akash Katageri",
-  handle: "Akashkatageri",
+  handle: "akashk",
   bio: "Developer building Kletaq. I use AI to build and ship software fast.",
   location: "Bangalore, India",
   email: "kletaq.dev@gmail.com",
   github: "https://github.com/Akashkatageri",
   linkedin: "https://linkedin.com/in/akashkatageri",
-  portfolioUrl: "https://akashkatageri.github.io/my-portfolio/",
+  portfolioUrl: "https://akashkat.cv",
   kletaqUrl: "https://trykletaq.cv"
 };
 
