@@ -5,9 +5,9 @@ export default function Hero() {
   return (
     <section 
       id="top" 
-      className="relative min-h-[70vh] flex flex-col justify-center pt-32 pb-16 px-6 bg-transparent"
+      className="relative min-h-[75vh] flex flex-col justify-center pt-32 pb-20 px-6 sm:px-10 bg-transparent"
     >
-      <div className="max-w-4xl mx-auto w-full relative z-10 space-y-6">
+      <div className="max-w-6xl mx-auto w-full relative z-10 space-y-7">
         
         {/* Active Focus Pill */}
         <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-zinc-900/90 border border-zinc-800 text-xs font-mono text-zinc-300 backdrop-blur-sm">

@@ -26,35 +26,13 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: "kletaq",
     title: "Kletaq",
-    description: "My sole active project. Built using modern full-stack web technologies and AI-accelerated development workflows.",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Active Project"],
+    description: "My sole active project. An AI-accelerated platform and modern software engine built using cutting-edge full-stack web technologies and autonomous coding workflows.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Active Project", "AI Workflows"],
     linkUrl: "https://trykletaq.cv",
     linkLabel: "trykletaq.cv",
     isExternalWeb: true,
     status: "Active Development",
     highlight: true
-  },
-  {
-    id: "mongodb-json-importer",
-    title: "MongoDB JSON Stream Importer",
-    description: "A high-performance Python utility for memory-efficiently streaming and bulk-inserting multi-gigabyte JSON files into MongoDB with ijson parsing, PyMongo bulk writes, and resume capability.",
-    tags: ["Python", "MongoDB", "ijson", "PyMongo", "Data Streaming"],
-    linkUrl: "https://github.com/Akashkatageri/mongodb-json-stream-importer",
-    linkLabel: "View Repository",
-    isExternalWeb: false,
-    status: "Completed",
-    highlight: true
-  },
-  {
-    id: "portfolio",
-    title: "Personal Portfolio",
-    description: "Minimalist dark portfolio built with React, Vite, Tailwind CSS, and Aceternity meteors background.",
-    tags: ["React", "Vite", "Tailwind CSS", "TypeScript"],
-    linkUrl: "https://github.com/Akashkatageri/my-portfolio",
-    linkLabel: "View Repository",
-    isExternalWeb: false,
-    status: "Live",
-    highlight: false
   }
 ];
 

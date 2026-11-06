@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-black text-zinc-100 selection:bg-zinc-800 selection:text-white overflow-hidden">
       {/* Full-Page Fixed Meteors Layer across the entire screen */}
-      <Meteors number={60} />
+      <Meteors number={75} />
 
       {/* Minimal Top Navigation */}
       <Navigation />

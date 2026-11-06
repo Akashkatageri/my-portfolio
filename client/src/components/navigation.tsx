@@ -26,7 +26,7 @@ export default function Navigation() {
           : "bg-transparent py-6"
       }`}
     >
-      <div className="max-w-4xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 sm:px-10 flex items-center justify-between">
         <button
           onClick={() => scrollTo("#top")}
           className="text-sm font-semibold text-white tracking-tight hover:text-zinc-300 transition-colors"

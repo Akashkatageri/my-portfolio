@@ -3,25 +3,23 @@ import { cn } from "@/lib/utils";
 import React, { useMemo } from "react";
 
 export const Meteors = ({
-  number = 45,
+  number = 65,
   className,
 }: {
   number?: number;
   className?: string;
 }) => {
   // Pre-generate stable meteor parameters so there is NO hydration flash
-  // and NO frozen dots on refresh
+  // and NO frozen dots on refresh, with uniform distribution across ultrawide viewports
   const meteors = useMemo(() => {
     return Array.from({ length: number }).map((_, idx) => {
-      // Deterministic spread across width and height
-      const step = 100 / number;
-      const left = ((idx * step + (idx * 7) % 25) % 120) - 10; // -10% to 110%
-      const top = ((idx * 13) % 110) - 10; // -10% to 100%
+      // Deterministic spread covering full width (-15% to 125%) and height (-15% to 110%)
+      const left = ((idx * (140 / number) + (idx % 7) * 4.2) % 140) - 15;
+      const top = ((idx * (125 / number) + (idx % 5) * 4.8) % 125) - 15;
       
       // Negative delays ensure meteors are ALREADY mid-flight when the page loads
-      // This prevents the "frozen stationary dots" glitch on refresh
-      const delay = -(((idx * 1.37) % 8) + 0.1).toFixed(2);
-      const duration = (((idx * 1.1) % 4) + 4.5).toFixed(1);
+      const delay = -(((idx * 1.29) % 8) + 0.1).toFixed(2);
+      const duration = (((idx * 0.95) % 3.5) + 4.2).toFixed(1);
 
       return {
         left: `${left}%`,

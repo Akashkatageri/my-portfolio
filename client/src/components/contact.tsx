@@ -124,8 +124,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-transparent border-t border-zinc-900/80">
-      <div className="max-w-4xl mx-auto space-y-12">
+    <section id="contact" className="py-20 px-6 sm:px-10 bg-transparent border-t border-zinc-900/80">
+      <div className="max-w-6xl mx-auto space-y-12">
         
         <div className="space-y-2">
           <div className="text-xs font-mono text-zinc-500 uppercase tracking-wider">
